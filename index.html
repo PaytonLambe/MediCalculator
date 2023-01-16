@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pediatric Medication Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="flex">
         <h1>MediCalculator</h1>
         <h3>Pediatric Medications Calculator</h3>
-    </div>
+    
 
     <div id="medications">
         <select for="dropdown" id="medication">Select Medication
@@ -46,7 +47,7 @@
     </div>
 
     <div id="weight">
-        <input id="number" type="number" placeholder="Weight"></input>
+        <input id="number" type="number" placeholder="Weight" min="1" max="100"></input>
         <select for="dropdown" id="weightType">
             <option value="kilograms">Kg</option>
             <option value="pounds">Lb</option>
@@ -61,8 +62,12 @@
         <input id="height" type="number" placeholder="Height in Inches"></input>
     </div>
 
+    <div>
     <div id="estWeight"></div>
+    </div>
 
     <div id="totalDose"></div>
+
+    </div>
 </body>
 </html>
