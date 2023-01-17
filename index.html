@@ -12,45 +12,47 @@
         <h3>Pediatric Medications Calculator</h3>
     
 
-    <div id="medications">
-        <select for="dropdown" id="medication">Select Medication
-            <option value="select">Select Medication</option>
-            <option value="adenosine">Adenosine .2mg/kg</option>
-            <option value="albuterol">Albuterol .15mg/kg</option>
-            <option value="aminophylline">Aminophylline 5mg/kg</option>
-            <option value="amiodarone">Amiodarone 5mg/kg</option>
-            <option value="aspirin">Aspirin 5mg/kg</option>
-            <option value="ativan">Ativan .1mg/kg</option>
-            <option value="atropine">Atropine .02mg/kg</option>
-            <option value="atrovent">Atrovent .5mg/kg</option>
-            <option value="benadryl">Benadryl 1mg/kg</option>
-            <option value="brethine">Brethine .01mg/kg</option>
-            <option value="dextrose">Dextrose 10% 4ml/kg</option>
-            <option value="epinephrine1">Epinephrine 1/10 .01mg/kg</option>
-            <option value="epinephrine10">Epinephrine 1/1 .01mg/kg</option>
-            <option value="fentanyl">Fentanyl 1mcg/kg</option>
-            <option value="ketamine">Ketamine 1mg/kg</option>
-            <option value="labetalol">Labetalol 1mg/kg/hr</option>
-            <option value="levophed">Levophed 2mcg/kg/min</option>
-            <option value="lidocaine">Lidocaine 1mg/kg</option>
-            <option value="magSulfate">Magnesium Sulfate 50mg/kg</option>
-            <option value="morphine">Morphine .1mg/kg</option>
-            <option value="narcan">Narcan 2mg</option>
-            <option value="pepcid">Pepcid .25mg/kg</option>
-            <option value="rocuronium">Rocuronium 1mg/kg</option>
-            <option value="sodiumBicarb">Sodium Bicarb 1mEq/kg</option>
-            <option value="soluMedrol">Solu-Medrol 1mg/kg</option>
-            <option value="toradol">Toradol .5mg/kg</option>
-            <option value="versed">Versed .1mg/kg</option>
-            <option value="zofran">Zofran .15mg/kg</option>
+    <div>
+        <span class="title">Select Medication:</span>
+        <select id="med">
+            <option value="NaN">Select Medication</option>
+            <option value=".2">Adenosine .2mg/kg</option>
+            <option value=".15">Albuterol .15mg/kg</option>
+            <option value="5">Aminophylline 5mg/kg</option>
+            <option value="5">Amiodarone 5mg/kg</option>
+            <option value="5">Aspirin 5mg/kg</option>
+            <option value=".1">Ativan .1mg/kg</option>
+            <option value=".02">Atropine .02mg/kg</option>
+            <option value=".5">Atrovent .5mg/kg</option>
+            <option value="1">Benadryl 1mg/kg</option>
+            <option value=".01">Brethine .01mg/kg</option>
+            <option value="4">Dextrose 10% 4ml/kg</option>
+            <option value=".01">Epinephrine 1/10 .01mg/kg</option>
+            <option value=".01">Epinephrine 1/1 .01mg/kg</option>
+            <option value="1">Fentanyl 1mcg/kg</option>
+            <option value="1">Ketamine 1mg/kg</option>
+            <option value="1">Labetalol 1mg/kg/hr</option>
+            <option value="2">Levophed 2mcg/kg/min</option>
+            <option value="1">Lidocaine 1mg/kg</option>
+            <option value="50">Magnesium Sulfate 50mg/kg</option>
+            <option value=".1">Morphine .1mg/kg</option>
+            <option value="2">Narcan 2mg</option>
+            <option value=".25">Pepcid .25mg/kg</option>
+            <option value="1">Rocuronium 1mg/kg</option>
+            <option value="1">Sodium Bicarb 1mEq/kg</option>
+            <option value="1">Solu-Medrol 1mg/kg</option>
+            <option value=".5">Toradol .5mg/kg</option>
+            <option value=".1">Versed .1mg/kg</option>
+            <option value=".15">Zofran .15mg/kg</option>
         </select>
     </div>
 
-    <div id="weight">
-        <input id="number" type="number" placeholder="Weight" min="1" max="100"></input>
-        <select for="dropdown" id="weightType">
-            <option value="kilograms">Kg</option>
-            <option value="pounds">Lb</option>
+    <div>
+        <span class="title">Select Weight:</span>
+        <input id="number" type="number" placeholder="Weight" min="1" max="100">
+        <select id="weight">
+            <option value="1">Kg</option>
+            <option value="2.2">Lb</option>
         </select>
     </div>
 
@@ -59,15 +61,22 @@
     </div>
 
     <div>
-        <input id="height" type="number" placeholder="Height in Inches"></input>
+        <input id="height" type="text" placeholder="Height in Inches">
     </div>
 
-    <div>
-    <div id="estWeight"></div>
+    <div id="estWeight">
+        <input id="weight" READONLY placeholder="Autoestimate based on height">
     </div>
 
-    <div id="totalDose"></div>
+    <div id="doseBtn">
+        <button type="button">Calculate</button>
+    </div>
+
+    <div id="totalDose">
+        <input id="dose" name="dose" type="text" READONLY placeholder="Dose">
+    </div>
 
     </div>
 </body>
+<script src="javascript.js"></script>
 </html>
