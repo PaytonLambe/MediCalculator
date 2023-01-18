@@ -26,3 +26,7 @@
     display: inline-block;
     width: 150px;
 }
+
+table {
+    padding-top: 20px;
+}

@@ -52,21 +52,28 @@
         <input id="number" type="number" placeholder="Weight" min="1" max="100">
         <select id="weight">
             <option value="1">Kg</option>
-            <option value="2.2">Lb</option>
+            <option value=".454">Lb</option>
         </select>
     </div>
 
-    <div>
-        <h3>-or-</h3>
-    </div>
-
-    <div>
-        <input id="height" type="text" placeholder="Height in Inches">
-    </div>
-
-    <div id="estWeight">
-        <input id="weight" READONLY placeholder="Autoestimate based on height">
-    </div>
+    <table>
+        <tr>
+            <th>Age</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <td>1-11 months:</td>
+            <td>(age in months + 9)/2</td>
+        </tr>
+        <tr>
+            <td>1-4 years:</td>
+            <td>(age + 5)*2</td>
+        </tr>
+        <tr>
+            <td>5-14 years:</td>
+            <td>age * 4</td>
+        </tr>
+    </table>
 
     <div id="doseBtn">
         <button type="button">Calculate</button>
